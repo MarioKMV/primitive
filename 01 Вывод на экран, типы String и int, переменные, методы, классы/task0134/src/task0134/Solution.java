@@ -25,6 +25,7 @@ public class Solution {
     }
 
     public static long getVolume(int a, int b, int c) {
-        //напишите тут ваш код
+        long r = ((long) a*b*c);;
+        return r;   //напишите тут ваш код
     }
 }

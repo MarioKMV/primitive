@@ -25,6 +25,15 @@ public class Solution {
     }
 
     public static int sumDigitsInNumber(int number) {
-        //напишите тут ваш код
+        int num = number % 10;
+        int sum = num;
+
+        num = number /= 10;
+        sum = sum + (num % 10);
+
+        num = number /= 10;
+        sum = sum + (num % 10);
+
+        return sum;
     }
 }
