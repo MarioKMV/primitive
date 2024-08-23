@@ -26,6 +26,11 @@ import java.io.*;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        // Напишите ваш код здесь
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String a = reader.readLine();
+        int b = Integer.parseInt(a);
+        String c = reader.readLine();
+
+        System.out.println(c + " захватит мир через "+ b +" лет. Му-ха-ха!");
     }
 }

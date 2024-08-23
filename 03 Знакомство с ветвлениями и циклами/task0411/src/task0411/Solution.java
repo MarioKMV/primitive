@@ -18,6 +18,8 @@ Requirements:
 4. Метод checkSeason должен быть static void, и иметь только один параметр int.
 5. Метод checkSeason должен выводить текст на экран согласно заданию.*/
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Solution {
     public static void main(String[] args) {
         checkSeason(12);
@@ -27,7 +29,19 @@ public class Solution {
     }
 
     public static void checkSeason(int month) {
-        //напишите тут ваш код
+            if (month == 12 || month == 1 || month == 2)
+            System.out.println("зима");
+
+            if (month == 3 || month == 4 || month == 5)
+                System.out.println("весна");
+
+            if (month == 6 || month == 7 || month == 8)
+                System.out.println("лето");
+
+            if (month == 9 || month == 10 || month == 11)
+                System.out.println("осень");
+            //напишите тут ваш код
+
 
     }
 }

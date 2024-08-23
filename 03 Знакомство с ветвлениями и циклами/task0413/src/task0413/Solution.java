@@ -24,7 +24,32 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String n = reader.readLine();
+        switch (n) {
+            case "1":
+                System.out.print("понедельник");
+                break;
+            case "2":
+                System.out.print("вторник");
+                break;
+            case "3":
+                System.out.print("среда");
+                break;
+            case "4":
+                System.out.print("четверг");
+                break;
+            case "5":
+                System.out.print("пятница");
+                break;
+            case "6":
+                System.out.print("суббота");
+                break;
+            case "7":
+                System.out.print("воскресенье");
+                break;
+            default:
+                System.out.println("такого дня недели не существует");
+        }
     }
 }
