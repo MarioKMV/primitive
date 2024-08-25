@@ -40,7 +40,12 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String a = reader.readLine();
+        double b = Double.parseDouble(a);
+        double c = b % 5;
+        if (c > 1 && c < 4) System.out.println("Зелёный");
+        else if (c > 3 && c < 4) System.out.println("Желтый");
+        else System.out.println("Красный");
     }
 }

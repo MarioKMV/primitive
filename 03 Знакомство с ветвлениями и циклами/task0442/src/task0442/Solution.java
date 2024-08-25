@@ -26,7 +26,17 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
+//        int a = Integer.parseInt(bufferedReader.readLine());
+        int sum = 0;
+
+        for (int i = 0; ; i++){
+            int a = Integer.parseInt(bufferedReader.readLine());
+            sum = sum + a;
+            if (a == -1)
+            break;
+        }
+        System.out.println(sum);
     }
 }

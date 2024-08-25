@@ -34,7 +34,18 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String a1 = reader.readLine();
+        int a = Integer.parseInt(a1);
+        String a2 = reader.readLine();
+        int b = Integer.parseInt(a2);
+        String a3 = reader.readLine();
+        int c = Integer.parseInt(a3);
+
+        if (b==c & a!=c) System.out.print(b+" "+c);
+        if (a==b&b!=c) System.out.print(a+" "+b);
+        if (a==c&a!=b) System.out.print(a+" "+c);
+        if (a==b & b==c) System.out.print(a+" "+b+" "+c);
 
     }
 }
